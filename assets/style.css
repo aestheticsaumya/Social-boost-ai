@@ -1,0 +1,612 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F9FAFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header & Navigation */
+header {
+    background: #7B5AFF;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Grid Container */
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ; */
+    grid-template-columns: auto;
+    grid-template-rows:min-content;
+    margin: 20px;
+    padding: 20px;
+    gap: 15px;
+    width: 1100px;
+}
+
+/* Grid Structure */
+.ai-powered {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
+}
+
+.create-schedule {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+}
+
+.schedule-social {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 4;
+}
+
+.write-ai {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 3;
+}
+
+.manage-accounts {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.consistent-schedule {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.stats {
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 2;
+}
+
+.grow-followers {
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 2;
+}
+
+/* Box Styling */
+.box {
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+/* Colors */
+.purple {
+    background: #7B5AFF;
+    color: white;
+}
+
+.less{
+    background: #E6E6FA;
+}
+
+.gold {
+    background:  #E5B80B;
+}
+
+.light {
+    background: bisque;
+}
+
+.white {
+    background: white;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Button */
+.btn {
+    background: #FFBA00;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #FFA500;
+}
+
+/* Chart Styling */
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.bar {
+    width: 20px;
+    background-color: #6f4ef2;
+    border-radius: 4px;
+}
+
+/* Profile Section */
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Manage */
+.manage-accounts {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.platforms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.platform {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: #F9C956;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.platform-text {
+    text-align: left;
+    font-size: 14px;
+}
+
+.platform-text strong {
+    display: block;
+    color: #1A1A1A;
+}
+
+.platform-text span {
+    color: #777;
+    font-size: 12px;
+}
+
+.manage-accounts h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-top: 10px;
+}
+
+/* Consistent Posting */
+.consistent-schedule {
+    background-color: #F9C956;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.consistent-schedule h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 15px;
+}
+
+.calendar {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    background-color: #8E5FE6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.checked {
+    background-color: #8E5FE6;
+    color: white;
+}
+
+.unchecked {
+    background-color: #FDE7C8;
+}
+
+
+/* Schedule Bar */
+.chart-container {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+h1{
+    font-size: 38px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.tabs span {
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.tabs .active {
+    background-color: #FCE7E7;
+    color: #C23A3A;
+    font-weight: 600;
+}
+
+.most-active {
+    background-color: #D4F8DA;
+    color: #2B7D3C;
+    padding: 3px 10px;
+    font-size: 14px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+
+.bar {
+    width: 15px;
+    background-color: #8E5FE6;
+    border-radius: 5px;
+}
+
+.bar:nth-child(1) { height: 30%; }
+.bar:nth-child(2) { height: 80%; }
+.bar:nth-child(3) { height: 60%; }
+.bar:nth-child(4) { height: 40%; }
+.bar:nth-child(5) { height: 50%; }
+.bar:nth-child(6) { height: 70%; }
+.bar:nth-child(7) { height: 90%; }
+.bar:nth-child(8) { height: 50%; }
+
+.time-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Follower Growth */
+.grow-followers {
+    display: flex;
+    background-color: #7A4DFF;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    gap: 20px;
+}
+
+.stats {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.stats h3 {
+    font-size: 24px;
+    color: #777;
+}
+
+.stats .big-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+
+.growth {
+    display: inline-block;
+    background: #CFF5D2;
+    color: #007B42;
+    font-size: 12px;
+    border-radius: 15px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.bar-chart {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 65px;
+}
+
+.bar {
+    width: 15px;
+    background-color: #7A4DFF;
+    border-radius: 5px;
+}
+
+
+.bar:nth-child(1) { height: 20px; }
+.bar:nth-child(2) { height: 50px; }
+.bar:nth-child(3) { height: 35px; }
+.bar:nth-child(4) { height: 50px; }
+.bar:nth-child(5) { height: 100px; }
+
+.followers {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    position: absolute;
+    left: 30%;
+}
+
+.followers .icon {
+    background: #F9C956;
+    color: #7A4DFF;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.text {
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.grow-followers h2 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* >56% */
+.stats {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.percentage {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+
+.subtext {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.avatars {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.avatars img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Content using AI */
+
+.write-ai.gold {
+    background: #FFC758;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.write-ai .title {
+    font-size: 40px;
+    text-align: left;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.write-ai .chat-container {
+    background: #FFF;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.write-ai .chat-bubble {
+    background: #f2e2ff;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.write-ai .chat-bubble.reply {
+    background: burlywood;
+}
+
+.write-ai .icon-button {
+    width: 40px;
+    height: 40px;
+    background: beige;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -170px 0px;
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-powered,
+    .manage-accounts,
+    .consistent-schedule,
+    .schedule-social,    
+    .stats,
+    .create-schedule,    
+    .write-ai,
+    .grow-followers{
+        grid-column: span 1;
+        grid-row: unset;
+    }
+    
+    .container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .stats {
+        width: 200px;
+        padding: 15px;
+    }
+    .percentage {
+        font-size: 28px;
+    }
+    .avatars img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .write-ai.gold {
+        width: 250px;
+        padding: 15px;
+    }
+    .write-ai .title {
+        font-size: 18px;
+    }
+    .write-ai .chat-bubble {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .write-ai .icon-button {
+        width: 40px;
+        height: 40px;
+    }
+}
